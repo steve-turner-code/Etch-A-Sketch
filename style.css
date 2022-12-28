@@ -9,8 +9,9 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 50px 0px;
+    padding: `0px 0px;
     height: 100vh;
     margin-top: 100px;
 }
@@ -25,7 +26,7 @@ body {
     background-color: lightgrey;
     border-radius: 3px;
     justify-content: center;
-    height: 400px;
+    padding: 20px 15vw;
 }
 
 .right-row {
@@ -33,7 +34,7 @@ body {
     background-color: azure;
     border-radius: 3px;
     padding: 30px 80px;
-    align-self: flex-start;
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(var(--num-rows), 1fr);
     grid-template-rows: repeat(var(--num-rows), 1fr);
@@ -41,6 +42,12 @@ body {
     width: 600px;
     max-height: 800px;
     max-width: 800px;
+
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
 
 }
 

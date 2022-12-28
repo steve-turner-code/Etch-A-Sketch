@@ -15,19 +15,25 @@
     </div>
     <div class="container">
         <div class="left-row">
-            <h3 style="margin-bottom: 50px;">Controls</h3>
+            <div>
+                <h3>Controls</h3>
+            </div>
+         <div class="controls">
+        <div style="display: flex; flex-direction: column;">
             <label style="text-align: center" for="mySlider">Choose your grid size:</label>
             <input type="range" min="4" max="64" value="8" class="slider" id="mySlider">
-            <div id="sliderValue" style="margin-bottom: 50px">8x8</div>
-            <button id="rainbowMode" style="margin-bottom: 50px">Enable rainbow mode</button>
-            <button id="reset" onclick="destroyTable();">Reset</button>
-
+            <div id="sliderValue">8x8</div>
         </div>
+            <button id="rainbowMode">Enable rainbow mode</button>
+            <button id="reset" onclick="destroyTable();">Reset</button>
+        </div>
+        </div>
+        
 
         <div class="right-row">
         </div>
 
-
     </div>
+    
 </body>
 </html>
