@@ -22,7 +22,8 @@ body {
     align-items: center;
     flex: 1;
     flex-shrink: 0;
-    background-color: azure;
+    background-color: lightgrey;
+    border-radius: 3px;
     justify-content: center;
     height: 400px;
 }
@@ -30,6 +31,7 @@ body {
 .right-row {
     flex: 4;
     background-color: azure;
+    border-radius: 3px;
     padding: 30px 80px;
     align-self: flex-start;
     display: grid;
@@ -37,8 +39,8 @@ body {
     grid-template-rows: repeat(var(--num-rows), 1fr);
     height: 600px;
     width: 600px;
-    max-height: 1000px;
-    max-width: 1000px;
+    max-height: 800px;
+    max-width: 800px;
 
 }
 
@@ -46,4 +48,20 @@ body {
 user-select: none;
 border-radius: 3px;
 border: 1px grey solid;
+}
+
+button {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+button:hover {
+    border-radius: 3px;
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: darkgray;
+    color: white;
+    
 }
